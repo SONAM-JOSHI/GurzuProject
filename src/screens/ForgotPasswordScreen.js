@@ -15,7 +15,7 @@ const ForgotPasswordScreen = () => {
     };
     const loggedin = () => {
         // const request =console.warn('onSendRequestPressed');
-        // console.warn('Loggenin')
+        console.warn('Loggenin')
         
     };
 
@@ -47,9 +47,11 @@ const ForgotPasswordScreen = () => {
                     type="SECONDARY"
                 />
                 <View style={styles.footer}>
-                    <Text style={{ color: "#7C7C7A", fontSize: 14, marginLeft: 70, marginTop: 10 }}>Remembered your Password? </Text>
+                    <Text style={{ color: "#7C7C7A", fontSize: 14, marginLeft: 70, marginTop: 10,        fontFamily:'WorkSans-Regular',
+                 }}>Remembered your Password? </Text>
                     <TouchableOpacity onPress={loggedin}>
-                        <Text style={{ color: "#004277", fontSize: 14, marginTop: 10, marginLeft: 5 }}>Login</Text>
+                        <Text style={{ color: "#004277", fontSize: 14, marginTop: 10, marginLeft: 5,         fontFamily:'WorkSans-Regular',
+                }}>Login</Text>
                     </TouchableOpacity>
                 </View>
 
@@ -65,48 +67,53 @@ const styles = StyleSheet.create({
     root: {
         alignItems: 'flex-start',
         padding: 20,
-        margin: 25,
+        margin: 35,
         marginTop: 90,
-
-
     },
     text: {
-        fontSize: 20,
-        paddingBottom: 20,
+        fontSize: 14,
+        paddingBottom:5,
         textAlign: 'center',
-        alignItems: 'center',
+        fontFamily:'WorkSans-Regular',
+     
+
     },
 
     title: {
-        fontSize: 30,
+        fontSize: 32,
         fontWeight: '400',
         color: '#004277',
         margin: 20,
-        fontFamily: 'Work Sans',
-        fontStyle: 'normal',
-
+        fontFamily:'WorkSans-Regular',
+        letterSpacing:2,
+        width:293,
+        height:45,
     },
     placeholder: {
         color: '#2971AB',
+        fontFamily:'WorkSans-Regular',
+
+        
     },
     mail: {
         // paddingHorizontal:10,
         color: '#004277',
         fontSize: 14,
-
-
+        fontFamily:'WorkSans-Regular',
+        height:25,
+        width:106,
 
     },
     container: {
         alignItems: 'center',
-        padding: 20,
+        padding: 30,
         marginTop: 50,
 
     },
     footer: {
         display: 'flex',
         flexDirection: 'row'
-    }
+    },
 });
 
 export default ForgotPasswordScreen;

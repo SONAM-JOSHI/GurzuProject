@@ -27,7 +27,8 @@ const onResetPressed = () =>{
 
                     />
                     <Text style={styles.title}>Forgot Password</Text>
-                    <Text style={styles.text}>Please enter the code sent in your Email.</Text>
+                    <Text style={styles.text}>Please enter the code sent in your  {"\n"} 
+                    Email.</Text>
                 </View>
                 <Text style={styles.code}>Code</Text>
 
@@ -54,24 +55,27 @@ const styles = StyleSheet.create({
     root: {
         alignItems: 'flex-start',
         padding: 20,
-        margin: 20,
+        margin: 35,
         marginTop: 90,
-
+        
 
     },
     text: {
-        fontSize: 20,
+        fontSize: 14,
         paddingBottom: 40,
+        textAlign:'center',
+        fontFamily:'WorkSans-Regular',
+
     },
 
     title: {
-        fontSize: 30,
+        fontSize: 32,
         fontWeight: '400',
         color: '#004277',
         margin: 15,
-        fontFamily: 'Work Sans',
-        fontStyle: 'normal',
+        fontFamily:'WorkSans-Regular',
 
+        
     },
     placeholder: {
         color: '#2971AB',
@@ -79,14 +83,16 @@ const styles = StyleSheet.create({
     code: {
         color: '#004277',
         fontSize: 14,
-
-
+        fontFamily:'WorkSans-Regular',
+        height:25,
 
     },
     container: {
         alignItems: 'center',
         padding: 20,
-        marginTop: 50,
+        marginTop: 55,
+        marginHorizontal:20,
+
 
     },
 

@@ -4,6 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import 'react-native-gesture-handler';
 import {ForgotPasswordScreen, NewPasswordScreen} from './screens';
 import {StackNav} from './routes';
+import MainContainer from './screens/MainContainer';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
     {/* <NewPasswordScreen/> */}
     {/* <ForgotPasswordScreen/> */}
 <StackNav/>
+{/* <MainContainer/> */}
     {/* <Navigation /> */}
     </SafeAreaView>
   );
