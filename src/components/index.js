@@ -1,6 +1,7 @@
-import CustomBotton from './CustomBotton';
-import CustomInput from './CustomInput';
-import ToggleButton from './ToggleButton';
-import ContainerButton from './ContainerButton';
+import {CustomButton, ToggleButton} from "./ButtonComponent";
+import NavigationHeader  from "./HeaderComponent";
+import { CustomInput, FormInput } from "./InputComponent";
+import ContainerButton from "./ScreenModules";
 
-export {CustomBotton, CustomInput, ToggleButton, ContainerButton}
+export {CustomButton, ToggleButton, NavigationHeader, CustomInput, FormInput}
+export  default ContainerButton

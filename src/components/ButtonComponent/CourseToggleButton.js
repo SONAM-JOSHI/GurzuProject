@@ -14,15 +14,12 @@ const ToggleButton = ({
         marginVertical:5,
         position:'relative',
         top:147,
-        // paddingVertical: 10,
         backgroundColor: '#004277',
         borderRadius: 25,
         width: 175,
         height:65,
         left:26,
-        // display: 'flex',
-        
-      
+        display: 'flex',
         justifyContent:'center',
         ...style,
       }

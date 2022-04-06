@@ -62,7 +62,7 @@ const ContainerButton = ({
                  }}>
                 {text}
             </Text>
-            <Image source={require('../assets/F3.png')} style={{marginTop:20}}/>
+            <Image source={require('../../assets/F3.png')} style={{marginTop:20}}/>
         </TouchableOpacity>
     );
 };

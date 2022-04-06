@@ -1,33 +1,32 @@
 import React from "react";
 import { View, Text, StyleSheet, ScrollView, Image } from 'react-native';
-import ToggleButton from '../components/ToggleButton';
-import { ContainerButton } from "../components";
+import CourseToggleButton from '../../components';
+import {ContainerButton}  from "../../components";
+import  {NavigationHeader}  from "../../components";
 
 const CourseScreen = () => {
     return (
-        <ScrollView>
+
+        // <ScrollView>
+            
             <View style={styles.main}>
+                <NavigationHeader
+                headertitle="Courses"/>
                 <View style={styles.container}>
-                    <ToggleButton style={styles.toggle}
+                    <CourseToggleButton style={styles.toggle}
                         labelText="My courses"
                     />
-
-                    <ToggleButton style={styles.toggle1}
-                        labelText="All courses"
-
-                    />
-
                 </View>
 
                 <View style={styles.container}>
-            <View style={styles.img}>
-                    <ContainerButton style={styles.blender}
+            {/* <View style={styles.img}> 
+                    * <ContainerButton style={styles.blender}
                         labelText="Blenders 3D"
                         text="6 Chapters"
 
                     />
-                      </View>
-                    <ContainerButton style={styles.blender1}
+                      </View> */}
+                    {/* <ContainerButton style={styles.blender1}
                       
                         labelText="Adobe Illustrator"
                         text="6 Chapters"
@@ -53,19 +52,20 @@ const CourseScreen = () => {
                         labelText="All courses"
                         text="6 Chapters"
 
-                    />
+                    /> */}
 
                 </View>
 
 
             </View>
-        </ScrollView>
+        // </ScrollView>
     )
 };
 const styles = StyleSheet.create({
     container: {
+        display:'flex',
         // display: 'flex',
-        flexWrap: 'wrap',
+        flexWrap: 'wrap-reverse',
         alignItems: 'center',
         justifyContent: 'center',
         flexDirection: 'row',
@@ -73,9 +73,11 @@ const styles = StyleSheet.create({
         
     },
     main: {
+        display:"flex",
+        flex:1,
         // justifyContent:'space-between',
-        flexDirection: 'column',
-        marginLeft: 10,
+        // flexDirection: 'column',
+        // marginLeft: 10,
         // padding:10,
     },
     blender: {

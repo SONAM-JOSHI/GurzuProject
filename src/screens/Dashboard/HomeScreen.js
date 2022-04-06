@@ -1,17 +1,19 @@
 import React from "react";
 import { View, Text, Button, Pressable, Alert,StyleSheet} from 'react-native';
-import { CustomBotton } from "../components";
+import { CustomButton } from "../../components";
 // import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
+import { NavigationHeader } from "../../components";
 
 const HomeScreen = () => {
     return (
         <View>
-
-            <CustomBotton
+<NavigationHeader
+headertitle="Home">
+            {/* <CustomBotton
                 text="To-Do"
                 type="PRIMARY"
-            />
-            <CustomBotton
+            /> */}
+            {/* <CustomBotton
                 text="Recent Lessons"
                 type="PRIMARY"
             />
@@ -23,11 +25,12 @@ const HomeScreen = () => {
             <CustomBotton
                 text="My Assignments"
                 type="PRIMARY"
-            />
-            <CustomBotton
+            /> */}
+            {/* <CustomBotton
                 text="Select Course  >"
                 type="Four"
-            />
+            /> */}
+            </NavigationHeader>
         </View>
     )
 };

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { View, Text } from 'react-native';
 import { Calendar, CalendarList, Agenda } from 'react-native-calendars';
+import { NavigationHeader } from "../../components";
+
 
 // const timeToString = (time) => {
 //     const date = new Date(time);
@@ -8,6 +10,7 @@ import { Calendar, CalendarList, Agenda } from 'react-native-calendars';
 // };
 
 const CalendarScreen = () => {
+
 //     const [items, setItems] = useState({});
 //     const loadItems = (day) => {
 //         setTimeout(() => {
@@ -36,6 +39,7 @@ const CalendarScreen = () => {
 // }, 1000);
 // };
 return (
+    <NavigationHeader headertitle="Calendar">
     <View style={{ flex: 1 }}>
         {/* <Calendar
             items={items}
@@ -44,6 +48,7 @@ return (
         /> */}
         <Text>Calendar</Text>
     </View>
+    </NavigationHeader>
 );
 };
 
