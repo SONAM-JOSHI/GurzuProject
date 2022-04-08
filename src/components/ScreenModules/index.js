@@ -1,2 +1,3 @@
 import ContainerButton from "./ContainerButton";
-export default ContainerButton;
+import CourseFlatList from "./CourseFlatList";
+export  {ContainerButton, CourseFlatList};

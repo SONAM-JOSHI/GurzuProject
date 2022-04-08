@@ -1,7 +1,7 @@
-import {CustomButton, ToggleButton} from "./ButtonComponent";
+import {CustomButton, CourseToggleButton} from "./ButtonComponent";
 import NavigationHeader  from "./HeaderComponent";
 import { CustomInput, FormInput } from "./InputComponent";
-import ContainerButton from "./ScreenModules";
+import {ContainerButton, CourseFlatList} from "./ScreenModules";
 
-export {CustomButton, ToggleButton, NavigationHeader, CustomInput, FormInput}
-export  default ContainerButton
+export {CustomButton, CourseToggleButton, NavigationHeader, CustomInput, FormInput, ContainerButton, CourseFlatList}
+

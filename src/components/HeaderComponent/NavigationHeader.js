@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
         position:'relative',
         top:0,
         height:height-770,
+        width:width,
         backgroundColor:'#004277',
         borderBottomLeftRadius:20,
         borderBottomRightRadius:20,
