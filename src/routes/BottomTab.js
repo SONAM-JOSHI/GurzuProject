@@ -4,11 +4,11 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Icon from 'react-native-vector-icons/dist/Feather';
 
 
-import { HomeScreen, CourseScreen, CalendarScreen, NotificationScreen, SettingsScreen } from '../screens/Dashboard';
+import { CourseScreen,  NotificationScreen, SettingsScreen } from '../screens/Dashboard';
 
-const HomeName = 'Home';
+// const HomeName = 'Home';
 const CourseName = 'Course';
-const CalendarName = 'Calendar';
+// const CalendarName = 'Calendar';
 const NotificationName = 'Notification';
 const SettingsName = 'Settings';
 
@@ -17,7 +17,7 @@ const Tab = createBottomTabNavigator();
 const BottomTab = () => {
     return (
             <Tab.Navigator
-                initialRouteName={HomeName}
+                initialRouteName={CourseName}
                 screenOptions={({ route }) => ({
                     headerShown:false,
                     tabBarActiveBackgroundColor:'#ffffff',
@@ -34,13 +34,14 @@ const BottomTab = () => {
 
                     tabBarIcon: ({ color, size }) => {
                         let iconName;
+                        // let rn = route.name;
+                        // if (rn === HomeName) {
+                        //     iconName = 'home';
                         let rn = route.name;
-                        if (rn === HomeName) {
-                            iconName = 'home';
-                        } else if (rn === CourseName) {
+                         if (rn === CourseName) {
                             iconName = 'book';
-                        } else if (rn === CalendarName) {
-                            iconName = 'calendar';
+                        // } else if (rn === CalendarName) {
+                        //     iconName = 'calendar';
                         } else if (rn === NotificationName) {
                             iconName = 'bell';
                         } else if (rn === SettingsName) {
@@ -51,9 +52,9 @@ const BottomTab = () => {
 
                 })}>
 
-                <Tab.Screen name={HomeName} component={HomeScreen} />
+                {/* <Tab.Screen name={HomeName} component={HomeScreen} /> */}
                 <Tab.Screen name={CourseName} component={CourseScreen} />
-                <Tab.Screen name={CalendarName} component={CalendarScreen} />
+                {/* <Tab.Screen name={CalendarName} component={CalendarScreen} /> */}
                 <Tab.Screen name={NotificationName} component={NotificationScreen} />
                 <Tab.Screen name={SettingsName} component={SettingsScreen} />
             </Tab.Navigator>

@@ -7,6 +7,7 @@ const CustomInput = ({
     placeholderText='',
     onChangeText=null,
     value=null,
+    onPress='',
     ...more
 }) => {
     return(

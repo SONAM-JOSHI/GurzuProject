@@ -29,7 +29,7 @@ const ResetPasswordScreen = () => {
                     <Text style={styles.text}>Please enter the code sent in your  {"\n"}
                         Email.</Text>
                 </View>
-                <CustomInput placeholderText='Enter your email' labelText='Email' />
+                <CustomInput placeholderText='Please enter the code' labelText='Code' />
                 <CustomButton
                     labelText="Reset"
                     onPress={onResetPressed}

@@ -4,6 +4,7 @@ import { View, Text, StyleSheet, ScrollView, Image, KeyboardAvoidingView, Dimens
 import CustomButton from '../../components/ButtonComponent/CustomButton';
 import { CustomInput } from '../../components';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
+import { PasswordInput } from '../../components';   
 
 const { width, height } = Dimensions.get('window')
 const NewPasswordScreen = () => {
@@ -14,6 +15,7 @@ const NewPasswordScreen = () => {
     const onResendPressed = () => {
         navigation.navigate('BottomTab')
     }
+    
     return (
         <KeyboardAvoidingView behavior='position'>
             <View style={styles.root}>
@@ -24,8 +26,13 @@ const NewPasswordScreen = () => {
                         resizeMode="contain"
                     />
                     <Text style={styles.title}>Create New Password</Text>
-                    <CustomInput placeholderText=' Enter your new password' labelText=' Password' secureTextEntry={true} />
-                    <CustomInput placeholderText='Re-Enter your password' labelText='Confirm Password' secureTextEntry={true} />
+                    <PasswordInput placeholderText=' Enter your new password' labelText=' Password' secureTextEntry={true} 
+            
+                    
+                    
+                    />
+
+                    <PasswordInput placeholderText='Re-Enter your password' labelText='Confirm Password' secureTextEntry={true} />
                     <CustomButton
                         labelText="Change Password"
                         onPress={onResendPressed}
